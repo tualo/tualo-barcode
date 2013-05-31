@@ -25,5 +25,9 @@
 		"type": "git",
 		"url": "git://github.com/tualo/tualo-barcode.git"
 	},
-	"readmeFilename": "README.md"
+	"readmeFilename": "README.md",
+	"dependencies": {
+		"tualo-code39": "*"
+		"tualo-datamatrix": "*"
+	}
 }

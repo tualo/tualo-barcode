@@ -1,7 +1,7 @@
 Description
 ===========
 
-tualo-barcode can be used to create barcode images in svg. There are no native depenencies for that.
+tualo-barcode can be used to create barcode images as svg. There are no native depenencies needed.
 
 Requirements
 ============
@@ -17,3 +17,4 @@ Installation
 How to Use
 ==========
 
+see the test.js

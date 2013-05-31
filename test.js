@@ -1,12 +1,25 @@
 var http = require('http');
-var barcode = require('./lib/barcode');
+var Barcode = require('./lib/barcode').Barcode;
 
 
 
 var server = http.createServer(function(req, res) {
 	res.writeHead(200);
-	var svg = barcode.SVG.getCode39("tualo.de");
-	res.end('<html><body style="background: gray;">'+svg+'</body></html>');
+	var svg = (new Barcode({
+		type: 'Code39',
+		width: 300
+	})).getSVG('tualo.de',true);
+
+	var svg2 = (new Barcode({
+		type: 'Datamatrix',
+		fillColor: 'blue',
+		strokeColor: 'darkblue',
+		strokeWidth: 1,
+		width: 'auto',
+		height: 'auto'
+	})).getSVG('ehrgfevfzefdhewhvfdgebfghefdeb vfdghg34zurt7364 34udf34v hgcqewf tualo.de',true);
+	
+	res.end('<html><body style="background: white;">'+svg+'<br/><br/>'+svg2+'</body></html>');
 });
 
 server.listen(parseInt(process.env.PORT) || 3000);

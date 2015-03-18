@@ -1,33 +1,33 @@
 {
-	"name": "tualo-barcode",
-	"version": "0.0.2",
-	"author": {
-		"name": "Thomas Hoffmann",
-		"email": "thomas.hoffmann@tualo.de"
-	},
-	"description": "Small and simple barcode Library",
-	"main": "./lib/barcode",
-	"engines": {
-		"node": ">=0.8.0"
-	},
-	"keywords": [
-		"barcode",
-		"code39",
-		"datamatrix"
-	],
-	"licenses": [
-	{
-		"type": "MIT",
-		"url": "LICENSE"
-	}
-	],
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/tualo/tualo-barcode.git"
-	},
-	"readmeFilename": "README.md",
-	"dependencies": {
-		"tualo-code39": "*",
-		"tualo-datamatrix": "*"
-	}
+  "name": "tualo-barcode",
+  "version": "0.1.0",
+  "author": {
+    "name": "Thomas Hoffmann",
+    "email": "thomas.hoffmann@tualo.de"
+  },
+  "description": "Small and simple barcode Library",
+  "main": "./lib/barcode",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "keywords": [
+    "barcode",
+    "code39",
+    "datamatrix"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tualo/tualo-barcode.git"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "tualo-code39": "*",
+    "tualo-datamatrix": "*"
+  }
 }
